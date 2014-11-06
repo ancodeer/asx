@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="bower_components/swipebox/src/css/swipebox.min.css" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+<body ng-controller="MainController">
+<nav>
+    <h1>精选产品</h1> <input type="text" placeholder="筛选产品" ng-model="search.name">
+</nav>
+
+<div id="main">
+    <ul>
+        <li ng-repeat="product in products | filter:search:search.name">
+            <span class="images">
+                <a ng-repeat="img in product.images" ng-href="res/{{img}}"
+                   target="_blank" class="swipebox" title="{{product.name}}">
+                    <img src="" ng-src="res/{{img}}" alt="image" />
+                </a>
+            </span>
+            <span class="desc">{{ product.name }}</span>
+            <span class="price">{{ product.price * 6 | number:0 }}</span>
+            <div class="clear"></div>
+        </li>
+    </ul>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angularjs/angular.min.js"></script>
+<script src="bower_components/swipebox/lib/ios-orientationchange-fix.js"></script>
+<script src="bower_components/swipebox/src/js/jquery.swipebox.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

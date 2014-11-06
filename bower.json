@@ -1,0 +1,24 @@
+{
+  "name": "asx",
+  "version": "0.0.1",
+  "description": "Australia Souvenir Exchange",
+  "main": "index.html",
+  "authors": [
+    "zorjiz"
+  ],
+  "license": "MIT",
+  "homepage": "zorji.me",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swipebox": "~1.2.9",
+    "angularjs": "~1.3.1",
+    "jquery": "~2.1.1"
+  }
+}

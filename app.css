@@ -1,0 +1,71 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+html, body, ul, ol {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #CA0700;
+}
+nav input {
+    width: 60%;
+    padding: 0;
+    font-size: 15px;
+    line-height: 150%;
+    text-indent: 1em;
+    border: 0;
+    margin-left: 5%;
+}
+nav h1 {
+    margin-left: 10%;
+    color: whitesmoke;
+    font-size: 0.9em;
+    text-align: center;
+    display: inline-block;
+}
+
+div#main {
+    margin-top: 3em;
+    padding: 0 1em;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+li {
+    font-size: 0.8em;
+    padding: 0.2em 0;
+    border-bottom: 1px solid #CFCF7C;
+}
+li img {
+    width: 100%;
+}
+.images, .desc, .price {
+    display: inline-block;
+    vertical-align: middle;
+}
+.images {
+    width: 20%;
+}
+.desc {
+    width: 60%;
+}
+.price {
+    font-weight: bold;
+    text-align: right;
+}
+.price:before {
+    content: '¥';
+}
+.clear {
+    clear: both;
+}
