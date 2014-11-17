@@ -26,7 +26,7 @@
                 </a>
             </span>
             <span class="desc">{{ product.name }}</span>
-            <span class="price">{{ product.price * 6 | number:0 }}</span>
+            <span class="price">{{ product.retail | number:0 }}</span>
             <div class="clear"></div>
         </li>
     </ul>
@@ -37,6 +37,6 @@
 <script src="bower_components/angularjs/angular.min.js"></script>
 <script src="bower_components/swipebox/lib/ios-orientationchange-fix.js"></script>
 <script src="bower_components/swipebox/src/js/jquery.swipebox.min.js"></script>
-<script src="app.js"></script>
+<script src="app.js?id=1"></script>
 </body>
 </html>

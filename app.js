@@ -11,6 +11,9 @@ var Price = {
         $http
             .get('res/data.json?time=' + new Date().getTime())
             .success(function (data) {
+                for(var i = 0; i < data.length; i++) {
+                    data[i].retail = Math.ceil(data[i].price) * 6;
+                }
                 $scope.products = data;
                 setTimeout(function () {
                     $('.swipebox').swipebox();
